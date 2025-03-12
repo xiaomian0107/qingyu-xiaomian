@@ -4,6 +4,10 @@ body {
     background: url('background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
+    <div class="text-box">
+    <p>屿岛的梦境航线</p>
+    <div class="star"></div>
+</div>
 }
 header {
     margin-top: 50px;
