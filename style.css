@@ -51,3 +51,29 @@ header {
     0%, 100% { transform: rotate(0deg); }
     50% { transform: rotate(10deg); }
 }
+/* 计时器样式 */
+#timer {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* 点击特效 */
+.click-effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('star.png') no-repeat center/cover;
+    animation: sparkle 1s ease-out;
+    pointer-events: none;
+}
+
+@keyframes sparkle {
+    0% { transform: scale(1) translateY(0); opacity: 1; }
+    50% { transform: scale(1.5) translateY(-20px); opacity: 0.7; }
+    100% { transform: scale(0.5) translateY(-30px); opacity: 0; }
+}
